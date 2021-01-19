@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.banner{
+    width: 300px;
+    height: 120px;
+    margin-left: 120px;
+    margin-top: 120px;
+    background-color: black;
+    color: white;
+    animation-name: cajaTraslada;
+    animation-timing-function: cubic-bezier();
+    transition-delay: 2s; /*!!*/
+    animation-duration: 4s;
+}
+.aire{
+    position: relative;
+    top: 50px;
+    left: 70px;
+    animation-name: aireacondicionado;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes cajaTraslada{
+    0%{
+
+    }
+}
+
+@keyframes aireacondicionado{
+    0%{
+        position: relative;
+        top: 50px;
+        left: 200px;    
+    }
+    30%{
+        position: relative;
+        top: 50px;
+        left: 70px;    
+    }
+    40%{
+        position: relative;
+        top: 50px;
+        left: 70px;
+    }
+    100%{
+        position: relative;
+        top: 50px;
+        left: -210px;
+    }
+}
