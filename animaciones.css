@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.caja{
+    width: 120px;
+    height: 120px;
+    margin-left: 120px;
+    margin-top: 120px;
+    background-color: black;
+    animation-name: cajaTraslada;
+    animation-timing-function: cubic-bezier();
+    transition-delay: 2s; /*!!*/
+    animation-duration: 4s;
+}
+
+@keyframes cajaTraslada{
+    0%{
+        margin-left: 120px;
+        margin-top: 120px;
+    }
+    50%{
+        margin-left: 420px;
+        margin-top: 120px;
+        
+    }
+    100%{
+        margin-left: 120px;
+        margin-top: 120px;
+    }
+}
